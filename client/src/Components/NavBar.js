@@ -7,10 +7,10 @@ export default function NavBar() {
         <nav className="navbar">
             <ul>
                 <li>
-                    <NavLink to='/'>Game</NavLink>
+                    <NavLink to='/'>Page 1</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/leaderboard'>Leaderboard</NavLink>
+                    <NavLink to='/leaderboard'>Page 2</NavLink>
                 </li>
                 <li>
                     <NavLink to='/about'>About</NavLink>

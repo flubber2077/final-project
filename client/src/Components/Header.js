@@ -3,7 +3,9 @@ import NavBar from "./NavBar"
 export default function Header() {
     return (
         <header>
-            <h1>hey</h1>
+            <h1>Final Project</h1>
+            <h2>By Dylan Jordan</h2>
+            <NavBar/>
         </header>
     )
 }
