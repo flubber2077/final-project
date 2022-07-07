@@ -1,4 +1,4 @@
 class MusicianSerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :id, :name, :rate
   has_many :instruments
 end

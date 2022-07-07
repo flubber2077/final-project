@@ -38,7 +38,7 @@ puts "done seeding instruments"
 end
 puts "done seeding songs"
 
-20.times do
+30.times do
     InstrumentAssignment.create!(
         song_id: Faker::Number.between(from: 1, to: 4),
         musician_id: Faker::Number.between(from: 1, to: 15),
