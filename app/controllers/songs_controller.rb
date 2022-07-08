@@ -7,7 +7,7 @@ class SongsController < ApplicationController
     def show
         song = Song.find(params[:id])
         sumRate = sum(song.musicians)
-        render json: [sumRate, song]
+        render json: song
         # sumRate has to nest inside of song info
         # 
         # write a custom serializer
