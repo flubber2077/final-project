@@ -1,7 +1,6 @@
-import React from 'react';
 import { useSelector } from "react-redux";
 
-export default function SongCard() {
+export default function MusicianInfo() {
     const song = useSelector((state) => state.song.value[0]);
     console.log(song)
     if (song != undefined) {

@@ -10,5 +10,7 @@ export const songSlice = createSlice({
     }
 })
 
+export const { changeSong } = songSlice.actions;
+
 
 export default songSlice.reducer;

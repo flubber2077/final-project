@@ -4,15 +4,9 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { configureStore } from "@reduxjs/toolkit";
+import store  from './features/store';
 import { Provider } from "react-redux";
-import songReducer from "./features/song"
-
-const store = configureStore({
-  reducer: {
-    song: songReducer,
-  }
-});
+import songReducer from "./features/song";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
