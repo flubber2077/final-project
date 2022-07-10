@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import { useSelector } from "react-redux";
 
 export default function SongCard() {
@@ -6,7 +6,7 @@ export default function SongCard() {
     return (
         <div className="songcard">
             <p>album art if i can fake it?</p>
-            <h1>song title</h1>
+            <h1>song title {song.name}</h1>
             <p>time {song.duration}</p>
             <p>number of musicians?</p>
             <p>date recorded</p>

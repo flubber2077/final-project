@@ -33,7 +33,8 @@ puts "done seeding instruments"
 4.times do
     Song.create!(
         name: Faker::Music::Prince.song,
-        duration: Faker::Number.between(from: 25, to: 2000)
+        duration: Faker::Number.between(from: 25, to: 2000),
+        coverart: Faker::LoremFlickr.image(size: "300x300")
     )
 end
 puts "done seeding songs"
