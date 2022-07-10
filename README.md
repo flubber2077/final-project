@@ -14,6 +14,7 @@ Things you may want to cover:
 * Database creation
 
 * Database initialization
+ to start postgresql: sudo service postgresql start
 
 * How to run the test suite
 
