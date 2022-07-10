@@ -9,5 +9,8 @@ Rails.application.routes.draw do
   resources :instruments
   resources :instrument_assignments
 
-  get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
+  get '/contact', to: 'contact#new'
+  post '/contact', to: 'contact#create'
+
+  # get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
 end
