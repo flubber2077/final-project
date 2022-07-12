@@ -1,6 +1,7 @@
 class MusiciansController < ApplicationController
 
-    def index
-        render json: Musician.all
-    end
+        def index 
+            musicians = Musician.order_alphabetical
+            render json: musicians, status: :ok
+        end
 end

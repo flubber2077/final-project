@@ -3,6 +3,14 @@ class Musician < ApplicationRecord
     has_many :instruments, through: :instrument_assignments
     has_many :songs, through: :instrument_assignments
 
-    validates :name, presence: true
-    validates :name, uniqueness: {case_sensitivity: false}
+    def self.alphabetical
+        self.order(:name)
+    end
+
+    def self.order_alphabetical
+        self.order(name: :ASC)
+    end
+
+    validates :name, presence: true, uniqueness: {case_sensitivity: false}
+    validates :rate, presence: true, numericality: {only_integer: true}
 end
