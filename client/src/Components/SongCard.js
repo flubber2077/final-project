@@ -1,10 +1,8 @@
 import React from 'react';
 import { useSelector } from "react-redux";
 
-export default function SongCard() {
-    const song = useSelector((state) => state.song.value[0]);
-    console.log(song)
-    if (song != undefined) {
+export default function SongCard({song}) {
+    console.log(song);
         return (
             <div className="songcard">
                 <img src={song.coverart} />
@@ -14,5 +12,4 @@ export default function SongCard() {
                 <p>date recorded</p>
             </div>
         )
-    }
 }

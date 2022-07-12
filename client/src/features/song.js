@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export const songSlice = createSlice({
     name: "song",
-    initialState: { value: { name: "null?", duration: 0 } },
+    initialState: {},
     reducers: {
         changeSong: (state, action) => {
             state.value = action.payload;

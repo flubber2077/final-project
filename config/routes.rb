@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   get 'contact/new'
   get 'contact/create'
   get 'contact/new'
@@ -7,7 +8,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  #get '/contact', to: 'contact#new'
+  get '/contact', to: 'users#new'
 
   resources :musicians
   resources :songs
