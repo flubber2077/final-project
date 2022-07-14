@@ -7,7 +7,6 @@ export default function SongCard({ song }) {
     let s = song.duration;
     let time = (s - (s %= 60)) / 60 + (9 < s ? ':' : ':0') + s
 
-    console.log(song.id)
     return (
         <div className="songcard">
             <img src={song.coverart} onClick={() => dispatch(changeCurrentID(song.id))} />
