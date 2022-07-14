@@ -2,9 +2,9 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export const currentIDSlice = createSlice({
     name: "currentID",
-    initialState: 0,
+    initialState: [],
     reducers: {
-        changeSong: (state, action) => {
+        changeCurrentID: (state, action) => {
             state.value = action.payload;
         }
     }
