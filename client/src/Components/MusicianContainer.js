@@ -13,7 +13,7 @@ export default function MusicianContainer(){
         arrOfMusicians = musicians.map(musician => < MusicianInfo key={musician.id} musician={musician} />);
     }
     return (
-        <div>
+        <div className="MusicianList">
             {arrOfMusicians}
         </div>
     )

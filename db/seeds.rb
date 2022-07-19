@@ -11,7 +11,7 @@ Song.destroy_all
 Instrument.destroy_all
 InstrumentAssignment.destroy_all
 
-15.times do
+30.times do
     Musician.create!(
         name: Faker::Name.unique.first_name,
         rate: Faker::Number.between(from: 15, to: 200)
@@ -39,7 +39,7 @@ puts "done seeding instruments"
 end
 puts "done seeding songs"
 
-30.times do
+70.times do
     InstrumentAssignment.create!(
         song_id: Faker::Number.between(from: 1, to: 4),
         musician_id: Faker::Number.between(from: 1, to: 15),
