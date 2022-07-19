@@ -3,23 +3,34 @@
 }
 
 body {
-  background-color: aliceblue;
+  background-color: #f5f5f5;
 }
 
 .main {
-  margin-left: 450px;
-  padding: 10px
+  margin-left: 400px;
+  padding: 10px;
+  margin-top: 190px;
 }
 
 header {
+  width: 100%;
+  position: fixed;    
   text-align: center;
-  background-color: rgb(75, 213, 213);
+  background-color: #94618E;
   box-shadow: 0px 0px 4px;
   z-index: 1;
 }
 
+h1 {
+  color:#49274A
+}
+
+h3 {
+  color:#49274A
+}
+
 .navbar {
-  background-color: lightgrey;
+  background-color: #49274A;
   display: flex;
   align-items: center;
 } 
@@ -53,8 +64,9 @@ header {
   width: 400px;
   height: 80%;
   position: fixed;
-  background-color: rgb(188, 188, 207);
+  background-color: #F4DECB;
   padding: 10px;
+    padding-top: 200px;
   text-align: center;
 }
 
