@@ -11,6 +11,14 @@ export default function MusicianContainer() {
     var musicianTableBody = document.createElement("tbody");
 
     if (song !== undefined && songID !== undefined) {
+
+        var tableBody = document.querySelector("tbody");
+        
+        console.log(tableBody)
+        if (tableBody !== null) {
+            tableBody.remove(); 
+        }
+
         var musicians = song[songID].musicians;
         for (var i = 0; i < musicians.length; i++) {
             var tr = document.createElement("tr");
