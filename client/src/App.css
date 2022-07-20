@@ -13,6 +13,8 @@ body {
   margin-top: 200px;
   background-color: #ffffff;
   border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 header {
@@ -20,7 +22,7 @@ header {
   position: fixed;   
   text-align: center;
   background-color: #94618E;
-  box-shadow: 0px 0px 4px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   z-index: 1;
 }
 
@@ -95,12 +97,16 @@ h3 {
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
+}
+
+.main:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 
 table {

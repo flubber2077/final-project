@@ -1,9 +1,10 @@
 class UserMailer < ApplicationMailer
     default from: ENV['GMAIL_USERNAME']
 
-    def info_email
-      @user = params[:user]
+    # layout "mailer"
 
-      mail(to: @user.email, subject: 'Welcome to My Awesome Site')
+    def welcome_email
+
+      mail(to: :email, subject: 'Welcome to My Awesome Site')
     end
 end

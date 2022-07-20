@@ -53,4 +53,8 @@ gem "faker", "~> 2.21"
 
 gem "serializer", "~> 1.0.2"
 
-gem 'figaro'
+gem "figaro"
+
+gem "rack-cors"
+
+gem "mail"

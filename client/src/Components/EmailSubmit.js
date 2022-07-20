@@ -16,8 +16,8 @@ export default function EmailSubmit() {
             song: song
         }
 
-        fetch(`/songs/${song}`, {
-            method: 'GET',
+        fetch(`http://localhost:3000/songs/${song+1}`, {
+            method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(user),
         });

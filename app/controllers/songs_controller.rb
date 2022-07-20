@@ -24,11 +24,23 @@ class SongsController < ApplicationController
         #no extra routes
     end
 
+    def update
+        song = Song.find([params[:id]])
+        UserMailer.with(email_params).welcome_email.deliver_later
+        render json: 100
+    end
+
+    private
+
     def sum(targetMusicians)
         sum = 0
         targetMusicians.each do |number|
             sum += number.rate
         end
         return sum
+    end
+
+    def email_params
+        params.permit(:fullName, :email, :song, :id)
     end
 end
