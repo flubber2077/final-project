@@ -9,7 +9,7 @@
 
   <body>
     <h1>Welcome to Website<h1> 
-    <h2><%= @user.first_name %>
-</h2>
+    <h2>Thank you, for your request, we will follow up with your invoice shortly.
+  </h2>
   </body>
 </html>

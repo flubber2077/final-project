@@ -1,9 +1,34 @@
-export default function EmailSubmit(){
+import React, {useState} from 'react'
+import {useSelector} from "react-redux";
+
+export default function EmailSubmit() {
+    const [fullName, setFullName] = useState("");
+    const [email, setEmail] = useState("");
+
+    const song = useSelector((state) => state.currentID.value);
+
+    function onSubmit(e) {
+        e.preventDefault();
+
+        const user = {
+            fullName: fullName,
+            email: email,
+            song: song
+        }
+
+        fetch(`/songs/${song}`, {
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(user),
+        });
+
+    }
     return (
-        <form>
-            <h4>Receive this info in email</h4>
-            <input type="text" placeholder="Write Your Email"/>
-            <input type="submit"/>
+        <form className="login-form" onSubmit={onSubmit}>
+            <h4>Receive this info via email</h4>
+            <input type="text" placeholder="Write Your Email"  value={email} onChange={(e) => setEmail(e.target.value)}/>
+            <input type="text" placeholder="Name" value={[fullName]} onChange={(e) => setFullName(e.target.value)}/>
+            <input type="submit" />
         </form>
     )
 }
