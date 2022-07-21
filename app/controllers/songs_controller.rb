@@ -24,10 +24,10 @@ class SongsController < ApplicationController
         #no extra routes
     end
 
-    def update
-        song = Song.find([params[:id]])
+    def create
+        # song = Song.find([params[:id]])
         UserMailer.with(email_params).welcome_email.deliver_later
-        render json: 100
+        # render json: 100
     end
 
     private
@@ -41,6 +41,6 @@ class SongsController < ApplicationController
     end
 
     def email_params
-        params.permit(:fullName, :email, :song, :id)
+        params.permit(:fullName, :email, :id)
     end
 end

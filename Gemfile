@@ -58,3 +58,5 @@ gem "figaro"
 gem "rack-cors"
 
 gem "mail"
+
+gem 'byebug', '~> 11.1', '>= 11.1.3'

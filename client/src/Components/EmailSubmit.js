@@ -11,13 +11,12 @@ export default function EmailSubmit() {
         e.preventDefault();
 
         const user = {
-            fullName: fullName,
-            email: email,
-            song: song
+            name: fullName,
+            email: email
         }
 
-        fetch(`http://localhost:3000/songs/${song+1}`, {
-            method: 'PATCH',
+        fetch(`http://localhost:3000/users/`, {
+            method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(user),
         });

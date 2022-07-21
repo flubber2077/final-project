@@ -32,3 +32,6 @@ local:
 #   service: Mirror
 #   primary: local
 #   mirrors: [ amazon, google, microsoft ]
+
+GMAIL_USERNAME: 'kyle.dylan.jordan@gmail.com'
+GMAIL_PASSWORD: 'krutulis'
