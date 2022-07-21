@@ -1,6 +1,5 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import MusicianInfo from "./MusicianInfo";
 
 export default function MusicianContainer() {
 
@@ -14,7 +13,6 @@ export default function MusicianContainer() {
 
         var tableBody = document.querySelector("tbody");
         
-        console.log(tableBody)
         if (tableBody !== null) {
             tableBody.remove(); 
         }
@@ -49,7 +47,7 @@ export default function MusicianContainer() {
                     <tr>
                         <th>Musician</th>
                         <th>Instrument</th>
-                        <th>Rate</th>
+                        <th>Rate in Dollars</th>
                     </tr>
                     </thead>
                 </table>

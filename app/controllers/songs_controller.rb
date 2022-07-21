@@ -24,12 +24,6 @@ class SongsController < ApplicationController
         #no extra routes
     end
 
-    def create
-        # song = Song.find([params[:id]])
-        UserMailer.with(email_params).welcome_email.deliver_later
-        # render json: 100
-    end
-
     private
 
     def sum(targetMusicians)

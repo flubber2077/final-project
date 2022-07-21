@@ -7,10 +7,7 @@ export default function NavBar() {
         <nav className="navbar">
             <ul>
                 <li>
-                    <NavLink to='/'>Page 1</NavLink>
-                </li>
-                <li>
-                    <NavLink to='/leaderboard'>Page 2</NavLink>
+                    <NavLink to='/'>Main Page</NavLink>
                 </li>
                 <li>
                     <NavLink to='/about'>About</NavLink>
