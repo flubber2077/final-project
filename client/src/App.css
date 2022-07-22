@@ -71,9 +71,18 @@ h3 {
   color: #49274A;
 }
 
+.about {
+  padding: 5vw;
+  padding-top: 190px;
+  margin: 5vw;
+
+  background-color: #F4DECB;
+  border-radius: 10px;
+}
+
 .songscontainer {
   width: 400px;
-  height: 80%;
+  height: 76%;
   position: fixed;
   background-color: rgb(188, 188, 207);
   padding: 10px;

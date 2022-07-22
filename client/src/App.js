@@ -1,11 +1,11 @@
 import './App.css';
 import Header from './Components/Header.js';
-import HighlightContainer from './Components/HighlightContainer.js';
-import MusicianContainer from './Components/MusicianContainer'
-import EmailSubmit from './Components/EmailSubmit';
+import MainPage from './Components/MainPage';
+import About from './Components/About';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { changeSong } from './features/song';
+import { Route, Routes, NavLink } from 'react-router-dom';
 
 function App() {
   const dispatch = useDispatch();
@@ -21,11 +21,13 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <HighlightContainer />
-      <div className="main">
-        <MusicianContainer />
-        <EmailSubmit />
-      </div>
+
+      <Routes>
+        <Route path='/'/>
+        <Route path='/about' element={<About />} />
+      </Routes>
+      <MainPage />
+
     </div>
   );
 }

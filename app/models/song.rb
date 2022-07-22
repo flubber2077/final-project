@@ -4,5 +4,4 @@ class Song < ApplicationRecord
     has_many :musicians, through: :instrument_assignments
 
     validates :name, presence: true
-    validates :name, uniqueness: true
 end

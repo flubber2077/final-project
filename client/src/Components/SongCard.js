@@ -9,7 +9,7 @@ export default function SongCard({ song }) {
 
     return (
         <div className="card">
-            <img src={song.coverart} onClick={() => dispatch(changeCurrentID(song.id))} />
+            <img src={song.coverart} onClick={() => dispatch(changeCurrentID(song.id-1))} />
             <div>
                 <h1>Title: {song.name}</h1>
                 <p>Length: {time}</p>

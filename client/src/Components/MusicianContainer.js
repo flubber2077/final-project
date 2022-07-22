@@ -14,8 +14,9 @@ export default function MusicianContainer() {
         var tableBody = document.querySelector("tbody");
         
         if (tableBody !== null) {
-            tableBody.remove(); 
+            tableBody.remove();
         }
+
 
         var musicians = song[songID].musicians;
         for (var i = 0; i < musicians.length; i++) {
